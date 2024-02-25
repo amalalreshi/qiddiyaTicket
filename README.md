@@ -38,7 +38,16 @@ The REST API to the Qiddiya Tickets is described below.
     Content-Type: application/json
     Content-Length: 2
 
-    []
+    [
+    {
+        "Password": "fgj99",
+        "id": "DF3EDC32-70A7-45B3-B7FB-AFF7B4FEEF9F",
+        "FirstName": "amal",
+        "Phone": 966535679094,
+        "LastName": "alreshi",
+        "Email": "amal@Icloud.com"
+    }
+]
 
 ## Create a new user
 
@@ -66,7 +75,7 @@ The REST API to the Qiddiya Tickets is described below.
 
 `GET /users/id`
 
-    http://127.0.0.1:8080/users/1
+    http://127.0.0.1:8080/users/5e560138-e9d6-4fc0-b495-85a52e335744
 
 ### Response
 
@@ -77,7 +86,14 @@ The REST API to the Qiddiya Tickets is described below.
     Content-Type: application/json
     Content-Length: 36
 
-    {"id":1,"name":"Foo","status":"new"}
+   {
+    "id": "5E560138-E9D6-4FC0-B495-85A52E335744",
+    "Email": "Abatol@Icloud.com",
+    "FirstName": "Abatol",
+    "Password": "Sd57fkl",
+    "Phone": 966535899094,
+    "LastName": "Almeshali"
+}
 
 ## Get a non-existent user
 
@@ -96,7 +112,10 @@ The REST API to the Qiddiya Tickets is described below.
     Content-Type: application/json
     Content-Length: 35
 
-    {"status":404,"reason":"Not found"}
+   {
+    "reason": "Not Found",
+    "error": true
+}
 
 ## Update user
 
@@ -104,7 +123,7 @@ The REST API to the Qiddiya Tickets is described below.
 
 `PUTCH /users/id`
 
-     http://127.0.0.1:8080/users/1
+     http://127.0.0.1:8080/users/5e560138-e9d6-4fc0-b495-85a52e335744
 ### Response
 
     HTTP/1.1 201 Created
@@ -115,7 +134,14 @@ The REST API to the Qiddiya Tickets is described below.
     Location: /thing/2
     Content-Length: 35
 
-    {"id":2,"name":"Bar","status":null}
+   {
+    "Phone": 67990998,
+    "id": "5E560138-E9D6-4FC0-B495-85A52E335744",
+    "FirstName": "Abatol",
+    "Email": "Abatol78@Icloud.com",
+    "Password": "S9987fkl",
+    "LastName": "Almeshali"
+}
 
 ## Delete user
 
@@ -123,7 +149,7 @@ The REST API to the Qiddiya Tickets is described below.
 
 `DELETE /users/id`
 
-    http://127.0.0.1:8080/users/1
+    http://127.0.0.1:8080/users/5e560138-e9d6-4fc0-b495-85a52e335744
 
 ### Response
 
@@ -134,7 +160,14 @@ The REST API to the Qiddiya Tickets is described below.
     Content-Type: application/json
     Content-Length: 74
 
-    [{"id":1,"name":"Foo","status":"new"},{"id":2,"name":"Bar","status":null}]
+{
+    "id": "B41578E4-AD5E-41D7-BF82-8C11683D9C53",
+    "Email": "Abatol78@Icloud.com",
+    "LastName": "Almeshali",
+    "FirstName": "Abatol",
+    "Password": "S9987fkl",
+    "Phone": 67990998
+}
 
 ## Get All Tickets
 
