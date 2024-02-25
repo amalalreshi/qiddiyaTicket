@@ -191,7 +191,7 @@ The REST API to the Qiddiya Tickets is described below.
     Content-Length: 40
 
     {"id":1,"name":"Foo","status":"changed"}
-## UPDATE  Ticket
+## Update  Ticket
 
 ### Request
 
@@ -283,7 +283,7 @@ The REST API to the Qiddiya Tickets is described below.
     Content-Length: 40
 
     {"id":1,"name":"Foo","status":"changed"}
-## UPDATE  Transactions
+## Update  Transactions
 
 ### Request
 
