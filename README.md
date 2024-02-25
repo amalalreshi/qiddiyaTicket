@@ -83,7 +83,7 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Request
 
-`GET /thing/id`
+`GET /users/id`
 
      http://127.0.0.1:8080/users/999
 
@@ -105,7 +105,6 @@ The REST API to the Qiddiya Tickets is described below.
 `PUT /uesrs/id`
 
    http://127.0.0.1:8080/users/1
-
 ### Response
 
     HTTP/1.1 201 Created
