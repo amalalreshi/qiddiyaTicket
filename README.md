@@ -106,7 +106,7 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Request
 
-`PUTCH /users/id`
+`PUT /users/id`
 
      http://127.0.0.1:8080/users/B41578E4-AD5E-41D7-BF82-8C11683D9C53
 ### Response
