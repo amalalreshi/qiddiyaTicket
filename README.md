@@ -31,14 +31,7 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 2
-
-    [
+  
     {
         "Password": "fgj99",
         "id": "DF3EDC32-70A7-45B3-B7FB-AFF7B4FEEF9F",
@@ -47,7 +40,7 @@ The REST API to the Qiddiya Tickets is described below.
         "LastName": "alreshi",
         "Email": "amal@Icloud.com"
     }
-]
+
 
 ## Create a new user
 
@@ -59,13 +52,7 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 201 Created
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 201 Created
-    Connection: close
-    Content-Type: application/json
-    Location: /thing/1
-    Content-Length: 36
+
 
     {
     "FirstName": "Abatol",
@@ -74,7 +61,7 @@ The REST API to the Qiddiya Tickets is described below.
     "Phone": 966535899094,
     "Password": "Sd57fkl",
     "id": "B41578E4-AD5E-41D7-BF82-8C11683D9C53"
-}
+    }
 
 ## Get user by Id
 
@@ -85,22 +72,18 @@ The REST API to the Qiddiya Tickets is described below.
     http://127.0.0.1:8080/users/B41578E4-AD5E-41D7-BF82-8C11683D9C53
 
 ### Response
-
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 36
-
-   {
+    {
     "id": "B41578E4-AD5E-41D7-BF82-8C11683D9C53",
     "Email": "Abatol@Icloud.com",
     "FirstName": "Abatol",
     "Password": "Sd57fkl",
     "Phone": 966535899094,
     "LastName": "Almeshali"
-}
+     }
+
+   
+
+  
 
 ## Get a non-existent user
 
@@ -111,18 +94,13 @@ The REST API to the Qiddiya Tickets is described below.
      http://127.0.0.1:8080/users/999
 
 ### Response
-
-    HTTP/1.1 404 Not Found
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 404 Not Found
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 35
-
-   {
+    {
     "reason": "Not Found",
     "error": true
-}
+    }
+    
+
+   
 
 ## Update user
 
@@ -133,22 +111,16 @@ The REST API to the Qiddiya Tickets is described below.
      http://127.0.0.1:8080/users/B41578E4-AD5E-41D7-BF82-8C11683D9C53
 ### Response
 
-    HTTP/1.1 201 Created
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 201 Created
-    Connection: close
-    Content-Type: application/json
-    Location: /thing/2
-    Content-Length: 35
-
-   {
+    {
     "Phone": 67990998,
     "id": "B41578E4-AD5E-41D7-BF82-8C11683D9C53",
     "FirstName": "Abatol",
     "Email": "Abatol78@Icloud.com",
     "Password": "S9987fkl",
-    "LastName": "Almeshali"
-}
+    "LastName": "Almeshali" 
+    }
+
+  
 
 ## Delete user
 
@@ -160,21 +132,16 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 74
-
-{
+    {
     "id": "B41578E4-AD5E-41D7-BF82-8C11683D9C53",
     "Email": "Abatol78@Icloud.com",
     "LastName": "Almeshali",
     "FirstName": "Abatol",
     "Password": "S9987fkl",
     "Phone": 67990998
-}
+    }
+
+
 
 ## Get All Tickets
 
@@ -186,14 +153,11 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
-
-    {"id":1,"name":"Foo","status":"changed"}
+    {
+    "id":1,
+    "name":"Foo"
+    ,"status":"changed"
+    }
 
 ## Get Ticket by id
 
@@ -205,14 +169,11 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
-
-    {"id":1,"name":"Foo","status":"changed"}
+    {
+    "id":1,
+    "name":"Foo",
+    "status":"changed"
+    }
 ## Create  Ticket
 
 ### Request
@@ -222,15 +183,13 @@ The REST API to the Qiddiya Tickets is described below.
     http://127.0.0.1:8080/tickets
 
 ### Response
+    {"id":1,
+    "name":"Foo",
+    "status":"changed"
+    }
+ 
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
-
-    {"id":1,"name":"Foo","status":"changed"}
+   
 ## Update  Ticket
 
 ### Request
@@ -241,14 +200,13 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
 
-    {"id":1,"name":"Foo","status":"changed"}
+
+    {
+    "id":1,
+    "name":"Foo",
+    "status":"changed"
+    }
 ## Delete  Ticket
 
 ### Request
@@ -259,14 +217,13 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
 
-    {"id":1,"name":"Foo","status":"changed"}
+
+    {
+    "id":1,
+    "name":"Foo",
+    "status":"changed"
+    }
     
 ## Get All Transactions
 
@@ -278,14 +235,13 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
 
-    {"id":1,"name":"Foo","status":"changed"}
+
+    {
+    "id":1,
+    "name":"Foo",
+    "status":"changed"
+    }
 
 ## Get transactions by id
 
@@ -297,14 +253,13 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
+   
 
-    {"id":1,"name":"Foo","status":"changed"}
+    {
+    "id":1,
+    "name":"Foo",
+    "status":"changed"
+    }
 ## Create  Transactions
 
 ### Request
@@ -315,14 +270,13 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
 
-    {"id":1,"name":"Foo","status":"changed"}
+
+    {
+    "id":1,
+    "name":"Foo",
+    "status":"changed"
+    }
 ## Update  Transactions
 
 ### Request
@@ -333,14 +287,13 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
 
-    {"id":1,"name":"Foo","status":"changed"}
+
+    {
+    "id":1,
+    "name":"Foo",
+    "status":"changed"
+    }
 ## Delete  Transactions
 
 ### Request
@@ -351,14 +304,13 @@ The REST API to the Qiddiya Tickets is described below.
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:31 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 40
+   
 
-    {"id":1,"name":"Foo","status":"changed"}
+    {
+    "id":1,
+    "name":"Foo",
+    "status":"changed"
+    }
     
 
 
