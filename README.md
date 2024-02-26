@@ -1,5 +1,5 @@
 
-
+Team 9 : Sumaiya Sani , Amal Alreshi , Albatol Ameshali
 # Qiddiya Tickets
 
 This application allows customers to reserve tickets for Qiddiya Amusement Park. It provides a user-friendly interface for managing ticket reservations and utilizes a REST API connected to a DataMapper-backed model , which is powered by a PostgreSQL database.
