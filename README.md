@@ -313,10 +313,7 @@ The REST API to the Qiddiya Tickets is described below.
     }
     
 
-Postman Links:
-Ticket Table : https://api.postman.com/collections/32984554-1f62bd1f-ea16-4fe2-9084-e282c34e942d?access_key=PMAT-01HQMKNT9D30JQ9VKJYSNC7VRH
-User Table : https://api.postman.com/collections/32984554-9a364d27-27c8-4dab-ac6f-1bec024711be?access_key=PMAT-01HQMKTDJ1J10G0G39MGEP7XPR
-Transaction Table : https://api.postman.com/collections/32984554-9a364d27-27c8-4dab-ac6f-1bec024711be?access_key=PMAT-01HQMKTDJ1J10G0G39MGEP7XPR 
+
 
 ### Database Schema:
 
